@@ -1,0 +1,83 @@
+
+## 📦 Requirements
+
+### System Requirements
+
+* **Operating System:** Windows / Linux / macOS
+* **Python:** 3.8 or higher
+* **Tesseract OCR Engine** (must be installed separately)
+
+### Python Libraries
+
+Install the required Python packages using:
+
+```bash
+pip install pyttsx3 pillow pytesseract
+```
+
+### External Dependency
+
+* **Tesseract OCR**
+
+  * Download & install from:
+    [https://github.com/tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract)
+  * After installation, make sure it is added to your system PATH
+    *(or set `pytesseract.pytesseract.tesseract_cmd` manually in code)*
+
+---
+
+## ▶️ How to Use
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/ScreenLens.git
+cd ScreenLens
+```
+
+2. **Run the script**
+
+```bash
+python main.py
+```
+
+3. **Capture screen text**
+
+* Press the shortcut (e.g., `Ctrl + P`) to select a screen region
+* The selected area is captured using screenshot
+* OCR extracts text from the image in real time
+
+4. **Live actions**
+
+* Extracted text can be:
+
+  * 🔊 Read aloud using Text-to-Speech
+  * 📋 Copied directly to clipboard
+  * 👀 Displayed on screen instantly
+
+5. **Works everywhere**
+
+* Detects text from **any application**:
+
+  * Browser
+  * PDF
+  * IDE
+  * Images
+  * Videos
+  * UI elements
+
+---
+
+## 🧠 Behind the Scenes
+
+* `ImageGrab` → takes screenshot
+* `pytesseract` → extracts text
+* `pyttsx3` → reads text aloud
+* `tkinter` → lightweight GUI
+* `threading` → smooth, non-blocking execution
+
+---
+
+If you want, I can also:
+
+Just say the word 👍
