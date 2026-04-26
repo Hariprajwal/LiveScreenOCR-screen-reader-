@@ -1,4 +1,3 @@
-# LiveScreenOCR-screen-reader-
 # 🔍 LiveScreenOCR: The Google Lens for Your Desktop
 
 A lightweight Python tool that allows you to select any region of your screen and instantly extract text using OCR. Perfect for copying text from images, videos, or protected PDFs.
